@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Maestra.master.cs" Inherits="WebApp.Maestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="css/estilo.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 103%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="principal">
+            <table border="1" id="tabla">
+                <tr>
+                    <td id="encabezado" class="auto-style1">ENCABEZADO</td>
+                </tr>
+                <tr>
+                    <td id="menu" class="auto-style1">AA                       
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="contenido" class="auto-style1">BB
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="pie" class="auto-style1">PIE</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
